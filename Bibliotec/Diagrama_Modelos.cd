@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bibliotec.Models.Autor">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Autor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotec.Models.Categoria">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Categoria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotec.Models.Editora">
+    <Position X="4" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Editora.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotec.Models.Emprestimo">
+    <Position X="6.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAQAAAAAAAAAAAAAAAAAAAQEECABAEAAAAAAA=</HashCode>
+      <FileName>Models\Emprestimo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tipo_emprestimo" />
+      <Property Name="Usuario" />
+      <Property Name="Livro" />
+      <Property Name="Exemplar" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bibliotec.Models.Exemplar">
+    <Position X="4" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAQAAAAAAIAAAAAAAAAAAAUAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Exemplar.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Localizacao" />
+      <Property Name="Livro" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bibliotec.Models.Livro">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAQAAAAAAAAQAACAAgAAAAAABAAAAAAABABA=</HashCode>
+      <FileName>Models\Livro.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Editora" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="Categoria_list" />
+      <Field Name="Autor_list" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Bibliotec.Models.Localizacao">
+    <Position X="4" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Localizacao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotec.Models.Ocorrencia">
+    <Position X="11" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAABAAAgA=</HashCode>
+      <FileName>Models\Ocorrencia.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="emprestimo" />
+      <Property Name="tipo_Ocorrencia" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bibliotec.Models.Tipo_emprestimo">
+    <Position X="6.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\Tipo_emprestimo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotec.Models.Tipo_ocorrencia">
+    <Position X="14" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Tipo_ocorrencia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotec.Models.Tipo_usuario">
+    <Position X="14" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Tipo_usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliotec.Models.Usuario">
+    <Position X="10.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAIAgAAAAACAAAAAAAAAQAAEAAAA=</HashCode>
+      <FileName>Models\Usuario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="tipo_Usuario" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
